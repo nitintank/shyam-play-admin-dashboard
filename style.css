@@ -274,6 +274,7 @@ body.dark {
   height:auto;
   margin-top: 80px;
   margin-left: 260px;
+  padding-bottom: 50px;
 }
 
 .page-heading{
@@ -425,7 +426,6 @@ body.dark {
   .dashboard{
     width: 100%;
     margin-left: 0px;
-    padding-bottom: 50px;
   }
 }
 
@@ -433,7 +433,6 @@ body.dark {
   .dashboard{
     width: 100%;
     margin-left: 0px;
-    padding-bottom: 50px;
   }
   .big-box{
     flex-direction: column;
