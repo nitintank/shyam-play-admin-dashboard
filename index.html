@@ -1,0 +1,290 @@
+<!DOCTYPE html <html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Shyam Play Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo_item">
+      <i class="bx bx-menu" id="sidebarOpen"></i>
+      <img src="images/logo.png" alt=""></i>
+    </div>
+
+    <div class="search_bar">
+      <input type="text" placeholder="Search" />
+    </div>
+
+    <div class="navbar_content">
+      <i class="bi bi-grid"></i>
+      <!-- <i class='bx bx-sun' id="darkLight"></i> -->
+      <i class='bx bx-bell'></i>
+      <img src="images/profile.jpg" alt="" class="profile" />
+    </div>
+  </nav>
+
+  <!-- sidebar -->
+  <nav class="sidebar">
+    <div class="menu_content">
+      <ul class="menu_items">
+        <!-- <div class="menu_title menu_dahsboard"></div> -->
+        <!-- duplicate or remove this li tag if you want to add or remove navlink with submenu -->
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-medal"></i>
+            </span>
+            <span class="navlink">Dashboard</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-medal"></i>
+            </span>
+            <span class="navlink">User List</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-medal"></i>
+            </span>
+            <span class="navlink">Favorite</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-medal"></i>
+            </span>
+            <span class="navlink">Market Watch</span>
+          </a>
+        </li>
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-home-alt"></i>
+            </span>
+            <span class="navlink">Profile</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Account Info</a>
+            <a href="#" class="nav_link sublink">Referral</a>
+            <a href="#" class="nav_link sublink">User Create</a>
+            <a href="#" class="nav_link sublink">Sub Admin</a>
+            <a href="#" class="nav_link sublink">Role Permission</a>
+          </ul>
+        </li>
+        <!-- end -->
+
+        <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-grid-alt"></i>
+            </span>
+            <span class="navlink">Finance</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Cash Pick Up</a>
+            <a href="#" class="nav_link sublink">Cash Drop</a>
+            <a href="#" class="nav_link sublink">D/W Request</a>
+            <a href="#" class="nav_link sublink">Pick Drop Request</a>
+            <a href="#" class="nav_link sublink">Money Transfer Request</a>
+          </ul>
+        </li>
+        <!-- end -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-grid-alt"></i>
+            </span>
+            <span class="navlink">Report</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Betting P/L</a>
+            <a href="#" class="nav_link sublink">P/L Sport Wise</a>
+            <a href="#" class="nav_link sublink">P/L User Wise</a>
+            <a href="#" class="nav_link sublink">Bet History</a>
+            <a href="#" class="nav_link sublink">Account Statement</a>
+            <a href="#" class="nav_link sublink">Login History</a>
+          </ul>
+        </li>
+        <!-- end -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-grid-alt"></i>
+            </span>
+            <span class="navlink">Site Settings</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Site Setting</a>
+            <a href="#" class="nav_link sublink">Support Number</a>
+            <a href="#" class="nav_link sublink">User Category</a>
+            <a href="#" class="nav_link sublink">Banner Manage</a>
+            <a href="#" class="nav_link sublink">Result Fancy</a>
+            <a href="#" class="nav_link sublink">Result Market</a>
+            <a href="#" class="nav_link sublink">Rollback Result</a>
+          </ul>
+        </li>
+        <!-- end -->
+        <!-- start -->
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+              <i class="bx bx-grid-alt"></i>
+            </span>
+            <span class="navlink">Manage</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">Notification Manage</a>
+            <a href="#" class="nav_link sublink">Bonus Setting</a>
+            <a href="#" class="nav_link sublink">Sport Setting</a>
+            <a href="#" class="nav_link sublink">Series Setting</a>
+            <a href="#" class="nav_link sublink">Matches Setting</a>
+            <a href="#" class="nav_link sublink">Market Setting</a>
+          </ul>
+        </li>
+        <!-- end -->
+      </ul>
+
+      <!-- Sidebar Open / Close -->
+      <div class="bottom_content">
+        <div class="bottom expand_sidebar">
+          <span> Expand</span>
+          <i class='bx bx-log-in'></i>
+        </div>
+        <div class="bottom collapse_sidebar">
+          <span> Log Out</span>
+          <i class='bx bx-log-out'></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <h2 class="page-heading">Dashboard</h2>
+    <div class="big-box">
+      <div class="left-box">
+        <h3>P&L</h3>
+        <div class="profit-loss-box">
+          <div class="content-main-box">
+            <img src="/images/grey-circle.png" alt="">
+            <div>
+              <h4>Sports P&L</h4>
+              <p>Sub Text</p>
+            </div>
+          </div>
+          <div class="content-main-box">
+            <img src="/images/grey-circle.png" alt="">
+            <div>
+              <h4>Live Casino P&L</h4>
+              <p>Sub Text</p>
+            </div>
+          </div>
+          <div class="content-main-box">
+            <img src="/images/grey-circle.png" alt="">
+            <div>
+              <h4>Own Profit Loss</h4>
+              <p>Sub Text</p>
+            </div>
+          </div>
+          <div class="content-main-box">
+            <img src="/images/grey-circle.png" alt="">
+            <div>
+              <h4>Downline Profit Loss</h4>
+              <p>Sub Text</p>
+            </div>
+          </div>
+        </div>
+        <h3>Balance</h3>
+        <div class="balance-box">
+          <p>Credit Limit :</p>
+          <p>Total Balance :</p>
+          <p>Own Balance :</p>
+          <p>Downline Balance :</p>
+          <p>Own Exposer :</p>
+          <p>Downline Exposer :</p>
+        </div>
+        <h3>Bonus & Reward</h3>
+        <div class="bonus-main-box">
+          <div class="bonus-box">
+            <p>Total Bonus :</p>
+            <p>Deposit Bonus :</p>
+            <p>Bonus Lock :</p>
+            <p>Welcome Bonus :</p>
+            <p>Refer Bonus :</p>
+            <p>Joining Bonus :</p>
+          </div>
+          <div class="reward-box">
+            <div class="reward-mini-box">
+              <h4>Scratch Card</h4>
+              <p>Sub Text</p>
+            </div>
+            <div class="reward-mini-box">
+              <h4>Lossback Bonus</h4>
+              <p>Sub Text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-box">
+        <h3>User</h3>
+        <div class="user-box">
+          <img src="/images/user.png" alt="">
+          <div class="user-box-content">
+            <h4>Total User</h4>
+            <p>Sub Text</p>
+          </div>
+          <div class="user-box-content">
+            <h4>Active User</h4>
+            <p>Sub Text</p>
+          </div>
+          <div class="user-box-content">
+            <h4>Inactive User</h4>
+            <p>Sub Text</p>
+          </div>
+          <div class="user-box-content">
+            <h4>Lock User</h4>
+            <p>Sub Text</p>
+          </div>
+          <div class="user-box-content">
+            <h4>Market Locked User</h4>
+            <p>Sub Text</p>
+          </div>
+          <div class="user-box-content">
+            <h4>Fancy Locked User</h4>
+            <p>Sub Text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
