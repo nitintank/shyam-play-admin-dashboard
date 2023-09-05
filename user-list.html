@@ -255,7 +255,7 @@
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
                         <p>US</p>
-                        <p>CP</p>
+                        <p onclick="showCPpop()">CP</p>
                         <p>DR</p>
                     </td>
                     <td>
@@ -300,7 +300,7 @@
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
                         <p>US</p>
-                        <p>CP</p>
+                        <p onclick="showCPpop()">CP</p>
                         <p>DR</p>
                     </td>
                     <td>
@@ -345,7 +345,7 @@
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
                         <p>US</p>
-                        <p>CP</p>
+                        <p onclick="showCPpop()">CP</p>
                         <p>DR</p>
                     </td>
                     <td>
@@ -390,7 +390,7 @@
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
                         <p>US</p>
-                        <p>CP</p>
+                        <p onclick="showCPpop()">CP</p>
                         <p>DR</p>
                     </td>
                     <td>
@@ -435,7 +435,7 @@
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
                         <p>US</p>
-                        <p>CP</p>
+                        <p onclick="showCPpop()">CP</p>
                         <p>DR</p>
                     </td>
                     <td>
@@ -512,6 +512,29 @@
             <button class="submit-btn">Update</button>
 
             <button class="cross-btn" onclick="closeCLpop()">X</button>
+        </div>
+    </div>
+
+    <!-- Change Password Popup -->
+
+    <div class="c-p-popup" id="c-p-popup">
+        <h2>Change Password</h2>
+        <div class="c-p-popup-inner-box">
+            <div class="c-p-popup-content">
+                <label for="">Master Password *</label>
+                <input type="text" placeholder="Enter Master Password">
+            </div>
+            <div class="c-p-popup-content">
+                <label for="">New Password *</label>
+                <input type="text" placeholder="Enter New Password">
+            </div>
+            <div class="c-p-popup-content">
+                <label for="">Confirm Password *</label>
+                <input type="text" placeholder="Enter Confirm Password">
+            </div>
+            <button class="submit-btn">Submit</button>
+
+            <button class="cross-btn" onclick="closeCPpop()">X</button>
         </div>
     </div>
 

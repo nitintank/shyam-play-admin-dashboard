@@ -78,3 +78,16 @@ let closeCLpop = ()=>{
   clpopup.style.display = "none"
   dashboard.style.filter = "blur(0px)"
 }
+
+// Change Password Popup
+
+let cppopup = document.getElementById("c-p-popup")
+
+let showCPpop = ()=>{
+  cppopup.style.display = "block"
+  dashboard.style.filter = "blur(10px)"
+}
+let closeCPpop = ()=>{
+  cppopup.style.display = "none"
+  dashboard.style.filter = "blur(0px)"
+}
