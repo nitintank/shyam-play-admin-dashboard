@@ -91,3 +91,16 @@ let closeCPpop = ()=>{
   cppopup.style.display = "none"
   dashboard.style.filter = "blur(0px)"
 }
+
+// Update Settings Popup
+
+let uspopup = document.getElementById("u-s-popup")
+
+let showUSpop = ()=>{
+  uspopup.style.display = "block"
+  dashboard.style.filter = "blur(10px)"
+}
+let closeUSpop = ()=>{
+  uspopup.style.display = "none"
+  dashboard.style.filter = "blur(0px)"
+}

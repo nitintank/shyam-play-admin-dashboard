@@ -254,9 +254,9 @@
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
-                        <p>US</p>
+                        <p onclick="showUSpop()">US</p>
                         <p onclick="showCPpop()">CP</p>
-                        <p>DR</p>
+                        <a href="/detailed-report.html"><p>DR</p></a>
                     </td>
                     <td>
                         <img src="/images/pdf.png" alt="" class="pdf">
@@ -299,9 +299,9 @@
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
-                        <p>US</p>
+                        <p onclick="showUSpop()">US</p>
                         <p onclick="showCPpop()">CP</p>
-                        <p>DR</p>
+                        <a href="/detailed-report.html"><p>DR</p></a>
                     </td>
                     <td>
                         <img src="/images/pdf.png" alt="" class="pdf">
@@ -344,9 +344,9 @@
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
-                        <p>US</p>
+                        <p onclick="showUSpop()">US</p>
                         <p onclick="showCPpop()">CP</p>
-                        <p>DR</p>
+                        <a href="/detailed-report.html"><p>DR</p></a>
                     </td>
                     <td>
                         <img src="/images/pdf.png" alt="" class="pdf">
@@ -389,9 +389,9 @@
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
-                        <p>US</p>
+                        <p onclick="showUSpop()">US</p>
                         <p onclick="showCPpop()">CP</p>
-                        <p>DR</p>
+                        <a href="/detailed-report.html"><p>DR</p></a>
                     </td>
                     <td>
                         <img src="/images/pdf.png" alt="" class="pdf">
@@ -434,9 +434,9 @@
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
                         <p onclick="showCLpop()">CL</p>
-                        <p>US</p>
+                        <p onclick="showUSpop()">US</p>
                         <p onclick="showCPpop()">CP</p>
-                        <p>DR</p>
+                        <a href="/detailed-report.html"><p>DR</p></a>
                     </td>
                     <td>
                         <img src="/images/pdf.png" alt="" class="pdf">
@@ -535,6 +535,445 @@
             <button class="submit-btn">Submit</button>
 
             <button class="cross-btn" onclick="closeCPpop()">X</button>
+        </div>
+    </div>
+
+    <!-- Update Setting Popup -->
+
+    <div class="u-s-popup" id="u-s-popup">
+        <h2>Update Settings For Shyamplay</h2>
+        <div class="u-s-popup-inner-box">
+            <div class="table">
+                <h3>Sport Setting</h3>
+                <table id="customers">
+                    <tr>
+                        <th>Sports</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Soccer</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cricket</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Horse Racing</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greyhound Racing</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Politics</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kabaddi</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Casino</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Slot Games</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table">
+                <h3>Partnership</h3>
+                <table id="customers">
+                    <tr>
+                        <th>Sports</th>
+                        <th>Upline</th>
+                        <th>Downline</th>
+                        <th>Our</th>
+                    </tr>
+                    <tr>
+                        <td>Soccer</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Cricket</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Horse Racing</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Greyhound Racing</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Politics</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Kabaddi</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Casino</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Slot Games</td>
+                        <td>100</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table">
+                <h3>Comission Setting</h3>
+                <table id="customers">
+                    <tr>
+                        <th>Sports</th>
+                        <th>Match</th>
+                        <th>Session</th>
+                        <th>Book Maker</th>
+                    </tr>
+                    <tr>
+                        <td>Soccer</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Cricket</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Horse Racing</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Greyhound Racing</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Politics</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Kabaddi</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Casino</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Slot Games</td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                        <td><input type="text" placeholder="0"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table">
+                <h3>Min Max Bet</h3>
+                <table id="customers">
+                    <tr>
+                        <th>Sports</th>
+                        <th>Market Min Bet</th>
+                        <th>Book Maker Min Bet</th>
+                        <th>Fancy Min Bet</th>
+                        <th>Market Max Bet</th>
+                        <th>Book Maker Max Bet</th>
+                        <th>Fancy Max Bet</th>
+                        <th>Market Delay</th>
+                        <th>Book Maker Delay</th>
+                        <th>Fancy Delay</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Soccer</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Cricket</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Horse Racing</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Greyhound Racing</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Politics</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Kabaddi</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Casino</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Slot Games</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>1000000</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="10"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="1000000"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                        <td><input type="text" placeholder="3"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="bottom-section">
+                <div class="bottom-section-content">
+                    <label for="">Transaction Password</label>
+                    <input type="text" placeholder="Transaction Password">
+                </div>
+                <button>Update</button>
+            </div>
+
+            <button class="cross-btn" onclick="closeUSpop()">X</button>
         </div>
     </div>
 
