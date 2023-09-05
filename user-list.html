@@ -253,7 +253,7 @@
                         <p onclick="showpop()">D</p>
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
-                        <p>CL</p>
+                        <p onclick="showCLpop()">CL</p>
                         <p>US</p>
                         <p>CP</p>
                         <p>DR</p>
@@ -298,7 +298,7 @@
                         <p onclick="showpop()">D</p>
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
-                        <p>CL</p>
+                        <p onclick="showCLpop()">CL</p>
                         <p>US</p>
                         <p>CP</p>
                         <p>DR</p>
@@ -343,7 +343,7 @@
                         <p onclick="showpop()">D</p>
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
-                        <p>CL</p>
+                        <p onclick="showCLpop()">CL</p>
                         <p>US</p>
                         <p>CP</p>
                         <p>DR</p>
@@ -388,7 +388,7 @@
                         <p onclick="showpop()">D</p>
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
-                        <p>CL</p>
+                        <p onclick="showCLpop()">CL</p>
                         <p>US</p>
                         <p>CP</p>
                         <p>DR</p>
@@ -433,7 +433,7 @@
                         <p onclick="showpop()">D</p>
                         <p onclick="showpop()">W</p>
                         <p onclick="showpop()">WB</p>
-                        <p>CL</p>
+                        <p onclick="showCLpop()">CL</p>
                         <p>US</p>
                         <p>CP</p>
                         <p>DR</p>
@@ -483,6 +483,35 @@
             <button class="submit-btn">Deposit</button>
 
             <button class="cross-btn" onclick="closepop()">X</button>
+        </div>
+    </div>
+
+    <!-- Credit Limit Popup -->
+
+    <div class="c-l-popup" id="c-l-popup">
+        <h2>Credit Limit</h2>
+        <div class="c-l-popup-inner-box">
+            <div class="c-l-popup-content">
+                <label for="">Old Credit</label>
+                <input type="text" placeholder="10000000">
+            </div>
+            <div class="c-l-popup-content">
+                <label for="">New Credit</label>
+                <div class="input-wrap">
+                    <input type="text">
+                    <p class="c-l-red-para">Credit Limit Is Required</p>
+                </div>
+            </div>
+            <div class="c-l-popup-content">
+                <label for="">Master Password</label>
+                <div class="input-wrap">
+                    <input type="text" placeholder="Enter Master Password">
+                    <p class="c-l-red-para">Master Password Is Required</p>
+                </div>
+            </div>
+            <button class="submit-btn">Update</button>
+
+            <button class="cross-btn" onclick="closeCLpop()">X</button>
         </div>
     </div>
 

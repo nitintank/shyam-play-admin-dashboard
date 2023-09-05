@@ -65,3 +65,16 @@ let closepop = ()=>{
   popup.style.display = "none"
   dashboard.style.filter = "blur(0px)"
 }
+
+// Credit Limit Popup
+
+let clpopup = document.getElementById("c-l-popup")
+
+let showCLpop = ()=>{
+  clpopup.style.display = "block"
+  dashboard.style.filter = "blur(10px)"
+}
+let closeCLpop = ()=>{
+  clpopup.style.display = "none"
+  dashboard.style.filter = "blur(0px)"
+}
