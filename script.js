@@ -51,3 +51,17 @@ if (window.innerWidth < 790) {
 } else {
   sidebar.classList.remove("close");
 }
+
+// Popup Javascript
+
+let popup = document.getElementById("d-w-popup")
+let dashboard = document.getElementById("dashboard")
+
+let showpop = ()=>{
+  popup.style.display = "block"
+  dashboard.style.filter = "blur(10px)"
+}
+let closepop = ()=>{
+  popup.style.display = "none"
+  dashboard.style.filter = "blur(0px)"
+}

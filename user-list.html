@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="logo_item">
             <i class="bx bx-menu" id="sidebarOpen"></i>
-            <img src="images/logo.png" alt=""></i>
+            <a href="/index.html"><img src="images/logo.png" alt=""></i></a>
         </div>
 
         <div class="search_bar">
@@ -185,7 +185,7 @@
     </nav>
 
     <!-- User List -->
-    <div class="dashboard">
+    <div class="dashboard" id="dashboard">
         <h2 class="page-heading">User List</h2>
         <div class="top-bar">
             <div class="top-bar-left">
@@ -218,7 +218,9 @@
                     <th>More</th>
                 </tr>
                 <tr>
-                    <td class="user-id"><p>Dilip3(Dilip)</p></td>
+                    <td class="user-id">
+                        <p>Dilip3(Dilip)</p>
+                    </td>
                     <td>xxxxx96325</td>
                     <td>User</td>
                     <td><img src="/images/Hierarchy.png" alt="" class="downline"></td>
@@ -248,9 +250,9 @@
                     </td>
                     <td>Aug 13, 2023</td>
                     <td class="btns">
-                        <p>D</p>
-                        <p>W</p>
-                        <p>WB</p>
+                        <p onclick="showpop()">D</p>
+                        <p onclick="showpop()">W</p>
+                        <p onclick="showpop()">WB</p>
                         <p>CL</p>
                         <p>US</p>
                         <p>CP</p>
@@ -261,7 +263,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="user-id"><p>Dilip3(Dilip)</p></td>
+                    <td class="user-id">
+                        <p>Dilip3(Dilip)</p>
+                    </td>
                     <td>xxxxx96325</td>
                     <td>User</td>
                     <td><img src="/images/Hierarchy.png" alt="" class="downline"></td>
@@ -291,9 +295,9 @@
                     </td>
                     <td>Aug 13, 2023</td>
                     <td class="btns">
-                        <p>D</p>
-                        <p>W</p>
-                        <p>WB</p>
+                        <p onclick="showpop()">D</p>
+                        <p onclick="showpop()">W</p>
+                        <p onclick="showpop()">WB</p>
                         <p>CL</p>
                         <p>US</p>
                         <p>CP</p>
@@ -304,7 +308,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="user-id"><p>Dilip3(Dilip)</p></td>
+                    <td class="user-id">
+                        <p>Dilip3(Dilip)</p>
+                    </td>
                     <td>xxxxx96325</td>
                     <td>User</td>
                     <td><img src="/images/Hierarchy.png" alt="" class="downline"></td>
@@ -334,9 +340,9 @@
                     </td>
                     <td>Aug 13, 2023</td>
                     <td class="btns">
-                        <p>D</p>
-                        <p>W</p>
-                        <p>WB</p>
+                        <p onclick="showpop()">D</p>
+                        <p onclick="showpop()">W</p>
+                        <p onclick="showpop()">WB</p>
                         <p>CL</p>
                         <p>US</p>
                         <p>CP</p>
@@ -347,7 +353,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="user-id"><p>Dilip3(Dilip)</p></td>
+                    <td class="user-id">
+                        <p>Dilip3(Dilip)</p>
+                    </td>
                     <td>xxxxx96325</td>
                     <td>User</td>
                     <td><img src="/images/Hierarchy.png" alt="" class="downline"></td>
@@ -377,9 +385,9 @@
                     </td>
                     <td>Aug 13, 2023</td>
                     <td class="btns">
-                        <p>D</p>
-                        <p>W</p>
-                        <p>WB</p>
+                        <p onclick="showpop()">D</p>
+                        <p onclick="showpop()">W</p>
+                        <p onclick="showpop()">WB</p>
                         <p>CL</p>
                         <p>US</p>
                         <p>CP</p>
@@ -390,7 +398,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="user-id"><p>Dilip3(Dilip)</p></td>
+                    <td class="user-id">
+                        <p>Dilip3(Dilip)</p>
+                    </td>
                     <td>xxxxx96325</td>
                     <td>User</td>
                     <td><img src="/images/Hierarchy.png" alt="" class="downline"></td>
@@ -420,9 +430,9 @@
                     </td>
                     <td>Aug 13, 2023</td>
                     <td class="btns">
-                        <p>D</p>
-                        <p>W</p>
-                        <p>WB</p>
+                        <p onclick="showpop()">D</p>
+                        <p onclick="showpop()">W</p>
+                        <p onclick="showpop()">WB</p>
                         <p>CL</p>
                         <p>US</p>
                         <p>CP</p>
@@ -433,6 +443,46 @@
                     </td>
                 </tr>
             </table>
+        </div>
+    </div>
+
+    <!-- Deposit/Withdrawal Popup -->
+
+    <div class="d-w-popup" id="d-w-popup">
+        <h2>Deposit</h2>
+        <div class="d-w-popup-inner-box">
+            <div class="admin-box">
+                <p>Tech Admin</p>
+                <div class="admin-input-box">
+                    <input type="text" placeholder="12345.67">
+                    <input type="text" placeholder="12345.67">
+                </div>
+            </div>
+            <div class="admin-box">
+                <p>Shyam Play</p>
+                <div class="admin-input-box">
+                    <input type="text" placeholder="12345.67">
+                    <input type="text" placeholder="12345.67">
+                </div>
+            </div>
+            <div class="amount-buttons">
+                <button>100 ₹</button>
+                <button>200 ₹</button>
+                <button>500 ₹</button>
+                <button>1000 ₹</button>
+                <button>5000 ₹</button>
+                <button>10000 ₹</button>
+            </div>
+            <input type="text" placeholder="Amount" class="big-input">
+            <p class="d-w-para">min 500 ₹ <span>max 4999 ₹</span></p>
+            <input type="text" placeholder="Master Password" class="big-input">
+            <p class="red-warn-para">Master Password Is Required</p>
+            <textarea name="" id="" cols="10" rows="3" placeholder="Remark"></textarea>
+            <hr>
+            <p class="total-button">Total: 0 ₹</p>
+            <button class="submit-btn">Deposit</button>
+
+            <button class="cross-btn" onclick="closepop()">X</button>
         </div>
     </div>
 
