@@ -362,3 +362,12 @@ body.dark {
 .detailed-report-pill-btn input:checked+label span{
     background: #b7b325;
 }
+
+/* Responsive Code */
+
+@media (max-width: 769px) {
+    .dashboard{
+        width: 100%;
+        margin-left: 0px;
+    }
+  }
