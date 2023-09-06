@@ -383,6 +383,62 @@ body{
   font-size: 30px;
 }
 
+/* Main Box */
+
+.main-box{
+  width: 95%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main-box h3{
+  font-size: 20px;
+}
+
+/* Table */
+
+.table{
+  width: 98%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #B6B326;
+  color: white;
+  white-space: nowrap;
+}
+
+#customers td input{
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#customers td span{
+  color: green;
+}
 
 /* Responsive Code */
 
@@ -390,6 +446,10 @@ body{
   .dashboard{
     width: 100%;
     margin-left: 0px;
+  }
+  .main-box{
+    width: 97%;
+    padding: 10px;
   }
 }
 
