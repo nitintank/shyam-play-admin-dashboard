@@ -286,7 +286,7 @@ body.dark {
 /* Top Toggle Buttons Section */
 
 .detailed-report {
-    width: 98%;
+    width: 99%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -362,6 +362,52 @@ body.dark {
 .detailed-report-pill-btn input:checked+label span{
     background: #b7b325;
 }
+
+/* Main Box Section */
+
+    .main-box{
+        width: 99%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px 0px;
+    }
+
+    .main-box-content{
+        width: 20%;
+        background-color: white;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .main-box-content h3{
+        font-size: 14px;
+    }
+
+    .main-box-content p{
+        font-size: 12px;
+    }
+
+    .main-box-content i{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .main-box-content .red-text{
+        color: red;
+    }
+
+    .main-box-content .green-text{
+        color: green;
+    }
 
 /* Responsive Code */
 
