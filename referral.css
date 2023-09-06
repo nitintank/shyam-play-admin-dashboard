@@ -383,6 +383,103 @@ body{
   font-size: 30px;
 }
 
+.refer-card{
+  width: 50%;
+  color: black;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Copy Link */
+
+.copy-link{
+  width: 98%;
+  background-color: #161623;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.copy-link .copy-link-para{
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #b7b520;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.copy-link .copy-link-para img{
+  width: 20px;
+  height: 20px;
+}
+
+/* Share Section */
+
+.share-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.share-section h2{
+  text-align: center;
+}
+
+.share-buttons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.share-buttons img{
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.share-section p{
+  text-align: center;
+}
+
+/* Responsive Code */
+
+@media (max-width: 769px) {
+  .refer-card{
+      width: 95%;
+  }
+  .share-buttons img{
+      width: 75px;
+      height: 40px;
+  }
+  .copy-link{
+    width: 100%;
+    font-size: 16px;
+  }
+  .copy-link .copy-link-para{
+    font-size: 15px;
+  }
+}
 
 /* Responsive Code */
 
