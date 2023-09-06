@@ -471,6 +471,14 @@ body.dark {
     display: none;
 }
 
+#money-transfer-table{
+    display: none;
+}
+
+#pick-drop-table{
+    display: none;
+}
+
 /* Table */
 
 .table {
