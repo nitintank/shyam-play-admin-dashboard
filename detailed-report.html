@@ -229,7 +229,7 @@
                     </span></label>
             </span>
             <span class="detailed-report-pill-btn">
-                <input type='radio' name='toggle-btn' id='scratch-card'>
+                <input type='radio' name='toggle-btn' id='scratch-card' onclick="showScratchCard()">
                 <label for='scratch-card'><span>
                         <p>Scratch Card</p>
                     </span></label>
@@ -834,6 +834,45 @@
             </div>
         </div>
 
+        <!-- Scratch Card Section -->
+
+        <div class="table" id="scratch-cards">
+            <table id="customers">
+                <tr>
+                    <th>Settled Time</th>
+                    <th>Amount Won</th>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>40</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 
     <!-- JavaScript -->
@@ -846,6 +885,7 @@
         let depositwithdrawal = document.getElementById("deposit-withdrawal-table")
         let moneytransfer = document.getElementById("money-transfer-table")
         let pickdrop = document.getElementById("pick-drop-table")
+        let scratchcard = document.getElementById("scratch-cards")
 
         let showAccStatement = () => {
             accstatement.style.display = "block"
@@ -854,6 +894,7 @@
             depositwithdrawal.style.display = "none"
             moneytransfer.style.display = "none"
             pickdrop.style.display = "none"
+            scratchcard.style.display = "none"
         }
         let showMainBox = () => {
             mainbox.style.display = "block"
@@ -862,6 +903,7 @@
             depositwithdrawal.style.display = "none"
             moneytransfer.style.display = "none"
             pickdrop.style.display = "none"
+            scratchcard.style.display = "none"
         }
         let showBetHistory = () => {
             bethistory.style.display = "block"
@@ -878,6 +920,7 @@
             accstatement.style.display = "none"
             moneytransfer.style.display = "none"
             pickdrop.style.display = "none"
+            scratchcard.style.display = "none"
         }
         let showMoneyTransfer = () => {
             moneytransfer.style.display = "block"
@@ -886,9 +929,20 @@
             mainbox.style.display = "none"
             accstatement.style.display = "none"
             pickdrop.style.display = "none"
+            scratchcard.style.display = "none"
         }
         let showPickDrop = () => {
             pickdrop.style.display = "block"
+            moneytransfer.style.display = "none"
+            depositwithdrawal.style.display = "none"
+            bethistory.style.display = "none"
+            mainbox.style.display = "none"
+            accstatement.style.display = "none"
+            scratchcard.style.display = "none"
+        }
+        let showScratchCard = () => {
+            scratchcard.style.display = "block"
+            pickdrop.style.display = "none"
             moneytransfer.style.display = "none"
             depositwithdrawal.style.display = "none"
             bethistory.style.display = "none"

@@ -479,6 +479,9 @@ body.dark {
     display: none;
 }
 
+#scratch-card{
+    display: none;
+}
 /* Table */
 
 .table {
