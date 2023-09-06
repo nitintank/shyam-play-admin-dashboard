@@ -194,12 +194,12 @@
         <section class="detailed-report">
             <span class="detailed-report-pill-btn">
                 <input type='radio' name='toggle-btn' id='user-info' checked>
-                <label for='user-info'><span>
+                <label for='user-info' onclick="showMainBox()"><span>
                         <p>Shyamplay Info</p>
                     </span></label>
             </span>
             <span class="detailed-report-pill-btn">
-                <input type='radio' name='toggle-btn' id='account-statement'>
+                <input type='radio' name='toggle-btn' id='account-statement' onclick="showAccStatement()">
                 <label for='account-statement'><span>
                         <p>Acc. Statement</p>
                     </span></label>
@@ -242,6 +242,7 @@
             </span>
         </section>
 
+        <div class="main-box-section" id="main-box-section">
         <div class="main-box">
             <div class="main-box-content">
                 <i class="fa-solid fa-money-bills"></i>
@@ -310,8 +311,123 @@
         </div>
     </div>
 
+
+        <!-- Account Statement Table -->
+
+        <div class="table" id="account-statement-table">
+            <table id="customers">
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Remark</th>
+                    <th>Amount</th>
+                    <th>Commission</th>
+                    <th>Free Bal</th>
+                    <th>Downline Bal</th>
+                    <th>Total Bal</th>
+                    <th>Bonus Type</th>
+                    <th>Lock Bonus</th>
+                    <th>Bonus Time</th>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
     <!-- JavaScript -->
     <script src="/script.js"></script>
+
+    <script>
+        let mainbox = document.getElementById("main-box-section")
+        let accstatement = document.getElementById("account-statement-table")
+        
+        let showAccStatement =()=>{
+            accstatement.style.display ="block"
+            mainbox.style.display = "none"
+        }
+        let showMainBox =()=>{
+            accstatement.style.display ="none"
+            mainbox.style.display = "block"
+        }
+    </script>
 </body>
 
 </html>
