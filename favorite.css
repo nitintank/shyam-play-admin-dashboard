@@ -283,6 +283,331 @@ body.dark {
   font-size: 30px;
 }
 
+/* Main Box */
+
+.main-box{
+  width: 99%;
+  margin: auto;
+  display: flex;
+}
+
+/* Match Details Section */
+
+.match-details {
+  height: auto;
+  width: 74%;
+  background-color: rgba(182, 179, 38, 0.10);
+  display: block;
+  margin: 52px auto 15px;
+  border-radius: 0px 15px 15px 15px;
+  border: 1px solid #b7b520;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+
+.match-details .top-pill {
+  width: 200px;
+  position: absolute;
+  top: -39.61px;
+  left: -1px;
+  height: 40px;
+}
+
+.league-name {
+  position: absolute;
+  top: -30px !important;
+  left: 7px !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.league-name img {
+  width: 35px;
+}
+
+.league-name p {
+  color: black;
+  font-size: 17px;
+}
+
+.match-game-details{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.match-game-details .para{
+  color: white;
+  background-color: #161623;
+  width: 98%;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* Match Table */
+
+.table{
+  width: 98%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-head{
+  width: 100%;
+  background-color: #161623;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.table-top-left{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.table-top-left img{
+  width: 20px;
+  height: 20px;
+}
+
+.table-top-right{
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.table-body{
+  width: 100%;
+  background-color: #393838;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgb(132, 132, 132);
+}
+
+.table-body-left p{
+  background-color: #393838;
+  color: white;
+  font-size: 18px;
+}
+
+.t-odds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.blue {
+  padding: 7px 0px;
+  background-color: #4fa1dc !important;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+.blue span{
+  font-size: 12px;
+}
+
+.pink {
+  padding: 7px 0px;
+  background-color: #f994ba !important;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+.pink span{
+  font-size: 12px;
+}
+
+/* Fancy Bar */
+
+.fancy-bar{
+  width: 98%;
+  background-color: #161623;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.fancy-bar p{
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #b7b520;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Details */
+
+details {
+  font-size: 18px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 98%;
+  border-radius: 8px;
+  position: relative;
+  color: white;
+  background-color: #161623;
+  display: none;
+}
+details .summary-title {
+  font-size: 18px;
+  color: #b7b520;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+details:hover {
+  cursor: pointer;
+}
+details .summary-content {
+  border-top: 1px solid #e2e8f0;
+  cursor: default;
+  padding: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+details summary {
+  list-style: none;
+  padding: 10px 10px;
+}
+details summary:focus {
+  outline: none;
+}
+details summary:hover .summary-chevron-up svg {
+  opacity: 1;
+}
+details .summary-chevron-up svg {
+  opacity: 0.5;
+}
+details .summary-chevron-up,
+details .summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  background: #161623;
+}
+details .summary-chevron-up svg,
+details .summary-chevron-down svg {
+  display: block;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Open Bets Section */
+
+.open-bets{
+  width: 24%;
+  height: auto;
+  border: 1px solid #b7b520;
+  margin: 52px auto 15px;
+  border-radius: 15px;
+  background-color: rgba(182, 179, 38, 0.10);
+  padding: 10px 0px;
+}
+
+.open-bets p{
+  font-size: 18px;
+  color: #b7b520;
+  width: 98%;
+  border-radius: 10px;
+  background-color: #161623;
+  padding: 10px;
+  margin: auto;
+}
+
+.open-bets-toggle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.open-bets-toggle-btn label img {
+  width: 20px;
+  height: 20px;
+}
+
+.open-bets-toggle-btn input[type="radio"] {
+  display: none;
+}
+
+.open-bets-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.open-bets-toggle-btn label {
+  width: 100%;
+  color: white;
+  background-color: #161623;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+:checked+label {
+  background: #B6B326;
+  color: #fff;
+}
+
+@media (max-width:1000px) {
+  .open-bets{
+      display: none;
+  }
+  .match-details{
+      width: 98%;
+  }
+  details{
+      display: block;
+  }
+}
 
 /* Responsive Code */
 
