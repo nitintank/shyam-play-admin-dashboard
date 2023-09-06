@@ -479,9 +479,14 @@ body.dark {
     display: none;
 }
 
-#scratch-card{
+#scratch-card-table{
     display: none;
 }
+
+#login-history-table{
+    display: none;
+}
+
 /* Table */
 
 .table {
