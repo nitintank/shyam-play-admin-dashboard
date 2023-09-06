@@ -467,6 +467,10 @@ body.dark {
     display: none;
 }
 
+#deposit-withdrawal-table{
+    display: none;
+}
+
 /* Table */
 
 .table {
@@ -724,6 +728,10 @@ body.dark {
         width: 95%;
         flex-direction: column;
     }
+    .user-search2{
+        width: 95%;
+        flex-direction: column;
+    }
     .paginator{
         padding: 0px 10px;
         width: 95%;
@@ -774,6 +782,112 @@ body.dark {
     }
     .reset-btn{
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .transfer-card{
+        width: 95%;
+        margin: auto;
+    }
+    .amount-status{
+        font-size: 20px;
+    }
+}
+
+/* Deposit Withdrawal Request Section */
+
+.user-search2{
+    width: 99%;
+    height: auto;
+    background-color: rgba(182, 179, 38, 0.10);
+    border-radius: 15px;
+    border: 2px solid #B6B326;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 15px 10px;
+}
+
+.transfer-card-section{
+    width: 99%;
+    margin: 10px auto;
+}
+
+.transfer-card{
+    width: 30%;
+}
+
+.transfer-card-top{
+    width: 100%;
+    background-color: #b5b326;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transfer-card-top p{
+    font-size: 18px;
+}
+
+.transfer-card-bottom{
+    width: 100%;
+    background-color: #333216;
+    color: white;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.transfer-card-bottom p{
+    font-size: 15px;
+}
+
+.transfer-card-top-status{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transfer-card-top-status img{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.transfer-card-top-status p{
+    background-color: #4cb543;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.amount-status{
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width:1200px) {
+    .amount-status{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:1024px){
+    .transfer-card{
+        width: 48%;
     }
 }
 

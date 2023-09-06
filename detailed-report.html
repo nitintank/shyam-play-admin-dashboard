@@ -211,7 +211,7 @@
                     </span></label>
             </span>
             <span class="detailed-report-pill-btn">
-                <input type='radio' name='toggle-btn' id='deposit-withdrawal'>
+                <input type='radio' name='toggle-btn' id='deposit-withdrawal' onclick="showDepositWithdrawal()">
                 <label for='deposit-withdrawal'><span>
                         <p>D/W Request</p>
                     </span></label>
@@ -684,6 +684,56 @@
             </div>
         </div>
 
+        <!-- Deposit Withdrawal Request Section -->
+
+        <div id="deposit-withdrawal-table">
+            <div class="user-search2">
+                <div class="input-box">
+                    <label for="">Select Type</label>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Deposit</option>
+                        <option value="">Withdrawal</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="">Select Status</label>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Pending</option>
+                        <option value="">Success</option>
+                        <option value="">Declined</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="">Select Date Range</label>
+                    <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
+                </div>
+                <button class="load-btn">Load</button>
+            </div>
+
+            <div class="transfer-card-section">
+                <div class="transfer-card">
+                    <div class="transfer-card-top">
+                        <p>Withdrawal</p>
+                        <div class="transfer-card-top-status">
+                            <img src="/images/eye-solid.svg" alt="">
+                            <p>Success</p>
+                        </div>
+                    </div>
+                    <div class="transfer-card-bottom">
+                        <p>Id: 807</p>
+                        <p>Date: 21-08-2023 05:31:54 AM</p>
+                        <p>User Name: Nitin54</p>
+                        <p>Method: Phone Pe</p>
+                        <p>Account Holder : Nitin</p>
+                        <p>Number : 99999999</p>
+                        <h2 class="amount-status">300 INR</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- JavaScript -->
@@ -693,19 +743,29 @@
         let mainbox = document.getElementById("main-box-section")
         let accstatement = document.getElementById("account-statement-table")
         let bethistory = document.getElementById("bet-history-table")
+        let depositwithdrawal = document.getElementById("deposit-withdrawal-table")
 
         let showAccStatement = () => {
             accstatement.style.display = "block"
             mainbox.style.display = "none"
             bethistory.style.display = "none"
+            depositwithdrawal.style.display = "none"
         }
         let showMainBox = () => {
             mainbox.style.display = "block"
             accstatement.style.display = "none"
             bethistory.style.display = "none"
+            depositwithdrawal.style.display = "none"
         }
         let showBetHistory = () => {
             bethistory.style.display = "block"
+            mainbox.style.display = "none"
+            accstatement.style.display = "none"
+            depositwithdrawal.style.display = "none"
+        }
+        let showDepositWithdrawal = () => {
+            depositwithdrawal.style.display = "block"
+            bethistory.style.display = "none"
             mainbox.style.display = "none"
             accstatement.style.display = "none"
         }
