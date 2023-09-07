@@ -69,6 +69,11 @@ body{
   color: white;
 }
 
+.navbar_content a{
+  display: flex;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .sidebar.close {
     left: -100%;
