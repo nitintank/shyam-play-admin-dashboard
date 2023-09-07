@@ -390,7 +390,7 @@ body{
 /* Main Box */
 
 .main-box{
-    width: 95%;
+    width: 99%;
     margin: auto;
     display: flex;
 }
