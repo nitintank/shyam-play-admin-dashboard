@@ -635,6 +635,30 @@ body{
     text-align: center;
 }
 
+.fancy-gap{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.table3{
+  width: 49%;
+  margin: auto;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+@media (max-width:769px) {
+  .fancy-gap{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .table3{
+    width: 98%;
+  }
+}
+
 /* Live Status Toggle Section */
 
 .live-status {
