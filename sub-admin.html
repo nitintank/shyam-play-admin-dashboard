@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/f01d64807e.js" crossorigin="anonymous"></script>
   <title>Sub Admin</title>
   <link rel="stylesheet" href="/sub-admin.css" />
 </head>
@@ -187,7 +188,83 @@
   <!-- Dashboard -->
   <div class="dashboard">
     <h2 class="page-heading">Sub Admin</h2>
-    
+
+    <div class="user-search2">
+      <div class="input-box">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter Name" />
+      </div>
+      <div class="input-box">
+        <label for="">User Name</label>
+        <input type="text" placeholder="Enter User Name" />
+      </div>
+      <div class="input-box">
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+      <div class="input-box">
+        <label for="">Mobile</label>
+        <input type="password" placeholder="Mobile" />
+        <span>OTP <img src="/images/otp-send.png" alt="" class="icon2"></span>
+      </div>
+      <div class="input-box">
+        <label for="">OTP</label>
+        <input type="password" placeholder="Enter OTP" />
+      </div>
+      <button class="load-btn">Create</button>
+    </div>
+
+    <div class="table">
+      <table id="customers">
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Roll Name</th>
+          <th>U/S</th>
+          <th>Join Date</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Ram</td>
+          <td>Subram</td>
+          <td>DEPOSIT/WITHDRAWAL</td>
+          <td><i class="fa-solid fa-lock-open"></i></td>
+          <td>14-08-2023</td>
+          <td class="items">
+            <select name="" id="">
+              <option value="">Please Select Role</option>
+              <option value="">DEPOSIT/WITHDRAWAL</option>
+              <option value="">FULL ACCESS</option>
+            </select>
+            <img src="/images/copy-link.png" alt="">
+          </td>
+          <td>
+            <i class="fa-solid fa-trash-can delete"></i>
+            <i class="fa-solid fa-key keys"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>SUBNT</td>
+          <td>SUBNT</td>
+          <td>FULL ACCESS</td>
+          <td><i class="fa-solid fa-lock-open"></i></td>
+          <td>15-08-2023</td>
+          <td class="items">
+            <select name="" id="">
+              <option value="">Please Select Role</option>
+              <option value="">DEPOSIT/WITHDRAWAL</option>
+              <option value="">FULL ACCESS</option>
+            </select>
+            <img src="/images/copy-link.png" alt="">
+          </td>
+          <td>
+            <i class="fa-solid fa-trash-can delete"></i>
+            <i class="fa-solid fa-key keys"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <!-- JavaScript -->
