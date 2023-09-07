@@ -383,6 +383,265 @@ body{
   font-size: 30px;
 }
 
+/* Table */
+
+.table {
+  width: 98%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  white-space: nowrap;
+}
+
+#customers td{
+  width: 25%;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #B6B326;
+  color: white;
+  white-space: nowrap;
+}
+
+#customers td input {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#customers .green-text{
+  color: green;
+}
+
+#customers .red-text{
+  color: red;
+}
+
+#customers .items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#customers td img{
+  width: 25px;
+  height: 25px;
+  background-color: #b5b326;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-all{
+  display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 5px;
+   font-size: 16px;
+}
+
+.select-all input{
+  height: 16px;
+  width: 16px;
+}
+
+.delete{
+  color: red;
+  background-color: rgb(255, 154, 154);
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.keys{
+  color: blue;
+  background-color: rgb(154, 154, 251);
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.input-box .icon2{
+  height: 20px; 
+  width: 20px; 
+  margin-bottom: 0px;
+}
+
+.input-box{
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.input-box label{
+  color: black;
+  font-size: 18px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 15px;
+}
+
+.input-box select{
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 15px;
+  background-image: url("/images/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input-box span{
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute; 
+  top: 55%; 
+  right: 12px;
+  cursor: pointer;
+}
+
+.input-box input::placeholder{
+  color: black;
+  font-size: 15px;
+}
+
+.load-btn{
+  width: 20%;
+  padding: 7px 10px;
+  background-color: #b5b326;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.reset-btn{
+  width: 20%;
+  padding: 10px;
+  background-color: #333216;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.user-search2{
+  width: 99%;
+  height: auto;
+  background-color: rgba(182, 179, 38, 0.10);
+  border-radius: 15px;
+  border: 2px solid #B6B326;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 15px 10px;
+}
+
+/* Table 2*/
+
+.table2 {
+  width: 98%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+#customers2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers2 td,
+#customers2 th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+#customers2 td{
+  width: 25%;
+}
+
+#customers2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers2 tr:hover {
+  background-color: #ddd;
+}
+
+#customers2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #11101d;
+  color: white;
+  white-space: nowrap;
+}
+
+#customers2 td input {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#customers2 td button{
+  background-color: #b5b326;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
 
 /* Responsive Code */
 
@@ -390,6 +649,15 @@ body{
   .dashboard{
     width: 100%;
     margin-left: 0px;
+  }
+  .user-search2{
+    flex-direction: column;
+  }
+  .input-box{
+    width: 100%;
+  }
+  .load-btn{
+    width: 100%;
   }
 }
 
