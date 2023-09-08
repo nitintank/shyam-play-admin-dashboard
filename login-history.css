@@ -451,7 +451,346 @@ body {
   font-size: 30px;
 }
 
+/* Money Transfer Section */
 
+.heading{
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.textbox span{
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute; 
+  top: 50%px; 
+  right: 12px;
+}
+.textbox .icon2{
+  height: 20px; 
+  width: 20px; 
+  margin-bottom: 0px;
+}
+
+.textbox .icon3{
+  height: 15px; 
+  width: 20px; 
+  margin-bottom: 0px;
+  position: absolute; 
+  top: 50%px; 
+  right: 12px;
+}
+
+.textbox input::placeholder{
+  color: black;
+  font-size: 15px;
+}
+
+.login-button{
+  width: 100%;
+}
+
+.login-button button{
+  width: 100%;
+  padding: 15px;
+  background-color: #b5b326;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.download-pdf{
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.user-pdf-group{
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+/* User Search Card */
+
+.user-search{
+  width: 90%;
+  height: auto;
+  background-color: rgba(182, 179, 38, 0.10);
+  border-radius: 15px;
+  border: 2px solid #B6B326;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 15px 10px;
+}
+
+.input-box{
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.input-box label{
+  color: black;
+  font-size: 18px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding-left: 15px;
+}
+
+.input-box select{
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 15px;
+  background-image: url("/images/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input-box span{
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute; 
+  top: 50%px; 
+  right: 12px;
+}
+
+.input-box input::placeholder{
+  color: black;
+  font-size: 15px;
+}
+
+.load-btn{
+  width: 30%;
+  padding: 7px;
+  background-color: #b5b326;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Paginator */
+
+.paginator{
+  width: 98%;
+  height: 50px;
+  background-color: white;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.paginator-left-section{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 10px;
+}
+
+.paginator-left-section select{
+  font-size: 16px;
+  padding: 0px 5px;
+}
+
+.paginator-right-section{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.paginator-right-section .wid-1{
+  width: 10px;
+  height: 20px;
+}
+
+.paginator-right-section .wid-2{
+  width: 20px;
+  height: 20px;
+}
+
+/* Table */
+
+.table {
+  width: 98%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #B6B326;
+  color: white;
+  white-space: nowrap;
+}
+
+#customers td input {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#customers .green-text {
+  color: green;
+}
+
+#customers .red-text {
+  color: red;
+}
+
+/* Responsive Code */
+
+@media (max-width:1200px) {
+  .create-user-card{
+      width: 45%;
+  }
+  .paginator{
+      width: 95%;
+  }
+  .user-search{
+      width: 95%;
+  }
+  .amount-status{
+      font-size: 22px;
+  }
+}
+
+@media (max-width:1024px){
+  .transfer-card{
+      width: 48%;
+  }
+  .user-search{
+    flex-wrap: wrap;
+  }
+  .input-box{
+    width: 49%;
+  }
+}
+
+@media (max-width:769px) {
+  .create-user-card{
+      width: 95%;
+  }
+  .create-user-image img{
+      width: 50%;
+  }
+  .user-search{
+      width: 95%;
+      flex-direction: column;
+  }
+  .paginator{
+      padding: 0px 10px;
+      width: 95%;
+  }
+  .paginator-right-section{
+      width: 50%;
+      gap: 7px;
+  }
+  .paginator-left-section{
+      width: 50%;
+      justify-content: flex-start;
+      gap: 5px;
+  }
+  .paginator-left-section p{
+      white-space: nowrap;
+  }
+  .paginator-right-section .wid-1{
+      width: 10px;
+      height: 15px;
+  }
+  .paginator-right-section .wid-2{
+      width: 15px;
+      height: 15px;
+  }
+  .transfer-card{
+      width: 48%;
+  }
+  .load-btn{
+      width: 100%;
+  }
+  .input-box{
+      width: 100%;
+  }
+  .reward-table{
+      width: 95%;
+  }
+  .reward-table table th{
+      font-size: 15px;
+  }
+  .user-pdf-group{
+      width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .transfer-card{
+      width: 95%;
+      margin: auto;
+  }
+  .amount-status{
+      font-size: 20px;
+  }
+}
 
 /* Responsive Code */
 
