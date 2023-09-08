@@ -189,11 +189,271 @@
     <div class="dashboard">
         <h2 class="page-heading">Bet History</h2>
 
-        
+        <!-- User Search Card -->
+
+    <div class="user-search">
+
+      <div class="live-status">
+          <span class="live-status-pill-btn">
+              <input type='radio' name='casino-game-btn' id='royal-gaming' checked onclick="currentbet()">
+              <label for='royal-gaming'>Current</label>
+          </span>
+          <span class="live-status-pill-btn">
+              <input type='radio' name='casino-game-btn' id='royal-gaming-virtual' onclick="pastbet()">
+              <label for='royal-gaming-virtual'>Past</label>
+          </span>
+      </div>
+
+      <div class="current-bet-history" id="current-bet-history">
+        <div class="input-box">
+          <label for="">Search User</label>
+          <input type="text" placeholder="Enter Username">
+        </div>
+          <div class="input-box">
+              <label for="">Select Sport</label>
+              <select name="" id="">
+                  <option value="">All</option>
+                  <option value="">Soccer</option>
+                  <option value="">Tennis</option>
+                  <option value="">Cricket</option>
+                  <option value="">Horse Racing</option>
+                  <option value="">Greyhound Racing</option>
+                  <option value="">Casino</option>
+                  <option value="">Super Nowa</option>
+                  <option value="">Slot Games</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Bet Type</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Match</option>
+                  <option value="">Session</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Delete Status</label>
+              <select name="" id="">
+                  <option value="">Un-Delete</option>
+                  <option value="">Delete</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Type</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Lay</option>
+                  <option value="">Back</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Status</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Win</option>
+                  <option value="">Loss</option>
+              </select>
+          </div>
+          <button class="load-btn">Apply</button>
+          <button class="reset-btn">Reset</button>
+      </div>
+
+      <div class="past-bet-history" id="past-bet-history">
+        <div class="input-box">
+          <label for="">Search User</label>
+          <input type="text" placeholder="Enter Username">
+        </div>
+          <div class="input-box">
+              <label for="">Select Sport</label>
+              <select name="" id="">
+                  <option value="">All</option>
+                  <option value="">Soccer</option>
+                  <option value="">Tennis</option>
+                  <option value="">Cricket</option>
+                  <option value="">Horse Racing</option>
+                  <option value="">Greyhound Racing</option>
+                  <option value="">Casino</option>
+                  <option value="">Super Nowa</option>
+                  <option value="">Slot Games</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Bet Type</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Match</option>
+                  <option value="">Session</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Type</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Lay</option>
+                  <option value="">Back</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">Status</label>
+              <select name="" id="">
+                  <option value="">Select</option>
+                  <option value="">Win</option>
+                  <option value="">Loss</option>
+              </select>
+          </div>
+          <div class="input-box">
+              <label for="">From</label>
+              <input type="date">
+          </div>
+          <div class="input-box">
+              <label for="">To</label>
+              <input type="date">
+          </div>
+          <button class="load-btn">Apply</button>
+          <button class="reset-btn">Reset</button>
+      </div>
+  </div>
+
+  <!-- Profit Loss Report -->
+
+  <div class="table">
+    <table id="customers">
+        <tr>
+            <th>Username</th>
+            <th>Parent</th>
+            <th>Description</th>
+            <th>Selection Type</th>
+            <th>B/L</th>
+            <th>Odds</th>
+            <th>Stake</th>
+            <th>Bet Status</th>
+            <th>Result</th>
+            <th>Exp/Profit</th>
+            <th>IP</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+        <tr>
+            <td>Nitin54</td>
+            <td>Tech Admin</td>
+            <td>Casino->Super Ace</td>
+            <td>lay</td>
+            <td>Lay</td>
+            <td>1</td>
+            <td>0.5</td>
+            <td>Loss</td>
+            <td>R</td>
+            <td><span class="green-text">-0.5</span> / <span class="red-text">0.5</span></td>
+            <td></td>
+            <td>28-08-2023</td>
+        </tr>
+    </table>
+</div>
+
+  <div class="paginator">
+      <div class="paginator-left-section">
+          <label for="">Items</label>
+          <select name="" id="">
+              <option value="">50</option>
+              <option value="">100</option>
+              <option value="">200</option>
+              <option value="">500</option>
+          </select>
+          <p>0 of 0</p>
+      </div>
+      <div class="paginator-right-section">
+          <img src="/images/super-left-arrow.png" alt="" class="wid-2">
+          <img src="/images/lefti-arrow.png" alt="" class="wid-1">
+          <img src="/images/righti-arrow.png" alt="" class="wid-1">
+          <img src="/images/super-right-arrow.png" alt="" class="wid-2">
+      </div>
+  </div>
     </div>
 
     <!-- JavaScript -->
     <script src="/script.js"></script>
+    <script>
+      let currentbethistory = document.getElementById("current-bet-history")
+    let pastbethistory = document.getElementById("past-bet-history")
+
+    let currentbet = () => {
+        currentbethistory.style.display = "flex"
+        pastbethistory.style.display = "none"
+    }
+    let pastbet = () => {
+        currentbethistory.style.display = "none"
+        pastbethistory.style.display = "flex"
+    }
+    </script>
 </body>
 
 </html>
