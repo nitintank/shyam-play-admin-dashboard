@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <title>Profit Loss User Wise</title>
+    <title>Profit & Loss User Wise</title>
     <link rel="stylesheet" href="/p-l-user-wise.css" />
 </head>
 
@@ -187,9 +187,60 @@
 
     <!-- Dashboard -->
     <div class="dashboard">
-        <h2 class="page-heading">Profit Loss User Wise</h2>
+        <h2 class="page-heading">Profit & Loss User Wise</h2>
 
-        
+        <div class="user-search2">
+          <div class="input-box">
+            <label for="">Search User</label>
+            <input type="text" value="Enter Username" />
+        </div>
+          <div class="input-box">
+            <label for="">Select Sport</label>
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">Soccer</option>
+                <option value="">Tennis</option>
+                <option value="">Cricket</option>
+                <option value="">Horse Racing</option>
+                <option value="">Greyhound Racing</option>
+                <option value="">Casino</option>
+                <option value="">Super Nowa</option>
+                <option value="">Slot Games</option>
+            </select>
+        </div>
+          <div class="input-box">
+            <label for="">Select Date Range</label>
+            <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
+        </div>
+          <button class="load-btn">Load</button>
+        </div>
+    
+        <div class="table">
+          <table id="customers">
+            <tr>
+              <th></th>
+              <th>Sr No.</th>
+              <th>Name</th>
+              <th>Stack</th>
+              <th>Down Line</th>
+              <th>P/L</th>
+              <th>Comm</th>
+              <th>Up Line</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td class="align-cent"><span><i class='bx bxs-down-arrow-circle'></i></span></td>
+              <td>1</td>
+              <td class="blue-text"><p>SHYAMPLAY</p></td>
+              <td>1518</td>
+              <td>-48</td>
+              <td class="green-text">12650</td>
+              <td>0</td>
+              <td>1025</td>
+              <td>Sep 8, 2023</td>
+            </tr>
+          </table>
+        </div>
     </div>
 
     <!-- JavaScript -->
