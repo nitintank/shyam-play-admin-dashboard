@@ -189,7 +189,32 @@
     <div class="dashboard">
         <h2 class="page-heading">Profit Loss</h2>
 
-        
+        <div class="user-search2">
+          <div class="input-box">
+            <label for="">Select Date Range</label>
+            <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
+        </div>
+          <button class="load-btn">Load</button>
+        </div>
+    
+        <div class="table">
+          <table id="customers">
+            <tr>
+              <th>Name</th>
+              <th>Settled Time</th>
+              <th>Stack</th>
+              <th>Comm</th>
+              <th>Net P/L</th>
+            </tr>
+            <tr>
+              <td>Aviator - [R]</td>
+              <td>9/8/23, 10:25 AM</td>
+              <td>10</td>
+              <td>0</td>
+              <td class="red-text">Loss: 0</td>
+            </tr>
+          </table>
+        </div>
     </div>
 
     <!-- JavaScript -->

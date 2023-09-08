@@ -316,7 +316,31 @@
 
         <!-- Account Statement Table -->
 
-        <div class="table" id="account-statement-table">
+        <div id="account-statement-table">
+            <div class="user-search2">
+                <div class="input-box">
+                    <label for="">Type</label>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Free Chips</option>
+                        <option value="">Profit/Loss</option>
+                        <option value="">Request Lock Amount</option>
+                        <option value="">Bonus</option>
+                        <option value="">Referral</option>
+                        <option value="">Rewards</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="">Select Date Range</label>
+                    <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
+                </div>
+                <div class="user-pdf-group">
+                    <button class="load-btn">Load</button>
+                    <img src="/images/download-pdf.png" alt="" class="download-pdf">
+                </div>
+            </div>
+
+        <div class="table" >
             <table id="customers">
                 <tr>
                     <th>Date</th>
@@ -411,6 +435,7 @@
                 </tr>
             </table>
         </div>
+    </div>
 
         <!--Bet History Table -->
 
