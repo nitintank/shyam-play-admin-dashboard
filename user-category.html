@@ -186,7 +186,7 @@
   </div>
 
   <!-- Dashboard -->
-  <div class="dashboard">
+  <div class="dashboard" id="dashboard">
     <h2 class="page-heading">Update Category List</h2>
 
     <div class="table">
@@ -201,35 +201,57 @@
           <td>BLUE</td>
           <td>100</td>
           <td>100000</td>
-          <td><button class="keys">Update</button></td>
+          <td><button class="keys" onclick="showCPpop()">Update</button></td>
         </tr>
         <tr>
           <td>SILVER</td>
           <td>100001</td>
           <td>1000000</td>
-          <td><button class="keys">Update</button></td>
+          <td><button class="keys" onclick="showCPpop()">Update</button></td>
         </tr>
         <tr>
           <td>GOLD</td>
           <td>1000001</td>
           <td>2500000</td>
-          <td><button class="keys">Update</button></td>
+          <td><button class="keys" onclick="showCPpop()">Update</button></td>
         </tr>
         <tr>
           <td>DIAMOND</td>
           <td>2500001</td>
           <td>5000000</td>
-          <td><button class="keys">Update</button></td>
+          <td><button class="keys" onclick="showCPpop()">Update</button></td>
         </tr>
         <tr>
           <td>PLATINUM</td>
           <td>5000001</td>
           <td>99999999</td>
-          <td><button class="keys">Update</button></td>
+          <td><button class="keys" onclick="showCPpop()">Update</button></td>
         </tr>
       </table>
     </div>
   </div>
+
+  <!-- Popup -->
+  <div class="c-p-popup" id="c-p-popup">
+    <h2>Update Category</h2>
+    <div class="c-p-popup-inner-box">
+        <div class="c-p-popup-content">
+            <label for="">Name</label>
+            <input type="text" placeholder="BLUE">
+        </div>
+        <div class="c-p-popup-content">
+            <label for="">From Amount</label>
+            <input type="text" placeholder="100">
+        </div>
+        <div class="c-p-popup-content">
+            <label for="">To Amount</label>
+            <input type="text" placeholder="100000">
+        </div>
+        <button class="submit-btn">Submit</button>
+
+        <button class="cross-btn" onclick="closeCPpop()">X</button>
+    </div>
+</div>
 
   <!-- JavaScript -->
   <script src="/script.js"></script>
