@@ -186,10 +186,175 @@
   </div>
 
   <!-- Dashboard -->
-  <div class="dashboard">
-    <h2 class="page-heading">Matches Setting</h2>
+  <div class="dashboard" id="dashboard">
+    <div class="top-head-bar">
+      <h2 class="page-heading">Matches List</h2>
+      <button onclick="showpop()">Add Matches</button>
+    </div>
 
+    <div class="user-search2">
+      <div class="input-box">
+        <label for="">Search By Match Name</label>
+        <input type="text" placeholder="Enter Match Name" />
+      </div>
+      <div class="input-box">
+        <label for="">Status</label>
+        <select name="" id="">
+          <option value="">All</option>
+          <option value="">Active</option>
+          <option value="">In-Active</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Sport</label>
+        <select name="" id="">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Series</label>
+        <select name="" id="">
+          <option value="">All</option>
+        </select>
+      </div>
+      <button class="load-btn">Load</button>
+    </div>
+
+    <div class="table">
+      <table id="customers">
+        <tr>
+          <th>Sport Name</th>
+          <th>Series Name</th>
+          <th>Match Name</th>
+          <th>Date</th>
+          <th>View</th>
+          <th>Action</th>
+          <th>Setting</th>
+        </tr>
+        <tr>
+          <td>Soccer (1)</td>
+          <td>Indonesian Liga 1 (11454392)</td>
+          <td>Persib Bandung V PS Barito Putera (11454392)</td>
+          <td>8/12/23, 4:00 PM</td>
+          <td><a href="/market-setting.html"><span>View</span></a></td>
+          <td><span class="green-back">Active</span></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+      </table>
+    </div>
   </div>
+
+      <!-- Popup -->
+      <div class="c-p-popup" id="c-p-popup">
+        <h2>Match Setting</h2>
+        <div class="c-p-popup-box">
+          <div class="c-p-popup-inner-box">
+            <div class="c-p-popup-content">
+              <label for="">Score Type*</label>
+              <input type="text">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Score Key*</label>
+              <input type="text" placeholder="0">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Tv URL*</label>
+              <input type="text" placeholder="Enter Tv URL">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Min Odds*</label>
+              <input type="text" placeholder="1">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Max Odds*</label>
+              <input type="text" placeholder="4">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Min Odds*</label>
+              <input type="text" placeholder="0">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Max Odds*</label>
+              <input type="text" placeholder="0">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Match Bet Delay*</label>
+              <input type="text" placeholder="7">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Match Max Stack*</label>
+              <input type="text" placeholder="10000">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Match Min Stack*</label>
+              <input type="text" placeholder="100">
+            </div>
+          </div>
+          <div class="c-p-popup-inner-box">
+            <div class="c-p-popup-content">
+              <label for="">Match Max Profit*</label>
+              <input type="text" placeholder="25000">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Session Bet Delay*</label>
+              <input type="text" placeholder="7">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Session Max Stack*</label>
+              <input type="text" placeholder="10000">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Session Min Stack*</label>
+              <input type="text" placeholder="100">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Session Max Profit*</label>
+              <input type="text" placeholder="500000">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Bet Delay*</label>
+              <input type="text" placeholder="7">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Max Stack*</label>
+              <input type="text" placeholder="10000">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Min Stack*</label>
+              <input type="text" placeholder="100">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Bookmaker Max Profit*</label>
+              <input type="text" placeholder="0">
+            </div>
+          </div>
+          <button class="cross-btn" onclick="closeCPpop()">X</button>
+        </div>
+        <button class="submit-btn">Submit</button>
+      </div>
+    
+        <!-- Add Match Popup -->
+        <div class="d-w-popup" id="d-w-popup">
+          <h2>Add Match</h2>
+          <div class="d-w-popup-inner-box">
+            <div class="c-p-popup-content">
+              <label for="">Name*</label>
+              <input type="text" placeholder="Enter Amount">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Match Id*</label>
+              <input type="text" placeholder="Enter Max Amount">
+            </div>
+            <div class="c-p-popup-content">
+              <label for="">Match Date*</label>
+              <input type="date">
+            </div>
+    
+            <button class="submit-btn">Submit</button>
+      
+            <button class="cross-btn" onclick="closepop()">X</button>
+          </div>
+        </div>
 
   <!-- JavaScript -->
   <script src="/script.js"></script>

@@ -568,8 +568,8 @@ body{
 /* Change Password Popup */
 
 .c-p-popup{
-  max-width: 400px;
-  width: 90%;
+  max-width: 550px;
+  width: 98%;
   height: auto;
   background-color: white;
   margin: auto;
@@ -577,7 +577,7 @@ body{
   border: 1px solid black;
   position: absolute;
   top: 12%;
-  left: 39%;
+  left: 32%;
   display: none;
 }
 
@@ -592,10 +592,16 @@ body{
 }
 
 .c-p-popup-inner-box{
+  width: 50%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.c-p-popup-box{
+  width: 100%;
+  display: flex;
 }
 
 .c-p-popup-content{
@@ -613,7 +619,7 @@ body{
 }
 
 .submit-btn{
-  width: 100%;
+  width: 98%;
   background-color: #B6B326;
   border: none;
   padding: 5px;
@@ -621,6 +627,8 @@ body{
   cursor: pointer;
   border-radius: 10px;
   color: white;
+  margin: 5px auto;
+  display: block;
 }
 
 .cross-btn{
@@ -641,15 +649,34 @@ body{
   border: none;
 }
 
+@media (max-width:900px) {
+  .c-p-popup{
+    width: 98%;
+    left: 24%;
+  }
+}
+
 @media (max-width:769px) {
   .c-p-popup{
-    width: 96%;
-    left: 25%;
+    width: 98%;
+    left: 14%;
+  }
+}
+@media (max-width:650px) {
+  .c-p-popup{
+    width: 98%;
+    left: 8%;
   }
 }
 @media (max-width:450px) {
   .c-p-popup{
     left: 1.5%;
+  }
+  .c-p-popup-box{
+    flex-direction: column;
+  }
+  .c-p-popup-inner-box{
+    width: 100%;
   }
 }
 

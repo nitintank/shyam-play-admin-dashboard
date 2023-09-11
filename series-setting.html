@@ -2,197 +2,336 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <title>Series Setting</title>
-  <link rel="stylesheet" href="/series-setting.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Series Setting</title>
+    <link rel="stylesheet" href="/series-setting.css" />
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar">
-    <div class="logo_item">
-      <i class="bx bx-menu" id="sidebarOpen"></i>
-      <a href="/index.html"><img src="images/logo.png" alt=""></i></a>
-    </div>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <a href="/index.html"><img src="images/logo.png" alt=""></i></a>
+        </div>
 
-    <div class="search_bar">
-      <input type="text" placeholder="Search" />
-    </div>
+        <div class="search_bar">
+            <input type="text" placeholder="Search" />
+        </div>
 
-    <div class="navbar_content">
-      <i class="bi bi-grid"></i>
-      <!-- <i class='bx bx-sun' id="darkLight"></i> -->
-      <a href="/match-list.html"><i class='bx bxs-store-alt'></i></a>
-      <i class='bx bx-bell'></i>
-      <img src="images/profile.jpg" alt="" class="profile" />
-    </div>
-  </nav>
+        <div class="navbar_content">
+            <i class="bi bi-grid"></i>
+            <!-- <i class='bx bx-sun' id="darkLight"></i> -->
+            <a href="/match-list.html"><i class='bx bxs-store-alt'></i></a>
+            <i class='bx bx-bell'></i>
+            <img src="images/profile.jpg" alt="" class="profile" />
+        </div>
+    </nav>
 
-  <!-- sidebar -->
-  <div class="sidebar close">
-    <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">Shyam Play</span>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="/index.html">
-          <img src="/images/admin-icon/dashboard.svg" alt="">
-          <span class="link_name">Dashboard</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="/index.html">Dashboard</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/user-list.html">
-          <img src="/images/admin-icon/user-list.svg" alt="">
-          <span class="link_name">User List</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="/user-list.html">User List</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/add-user.html">
-          <img src="/images/admin-icon/add-user.svg" alt="">
-          <span class="link_name">Add User</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="/add-user.html">Add User</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/favorite.html">
-          <img src="/images/admin-icon/favorite.svg" alt="">
-          <span class="link_name">Favorite</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="/favorite.html">Favorite</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/market-watch.html">
-          <img src="/images/admin-icon/market-watch.svg" alt="">
-          <span class="link_name">Market Watch</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="/market-watch.html">Market Watch</a></li>
-        </ul>
-      </li>
-      <li class="submenu_item">
-        <div class="iocn-link">
-          <a href="#">
-            <img src="/images/admin-icon/account-info.svg" alt="">
-            <span class="link_name">Profile</span>
+    <!-- sidebar -->
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class='bx bxl-c-plus-plus'></i>
+        <span class="logo_name">Shyam Play</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/index.html">
+            <img src="/images/admin-icon/dashboard.svg" alt="">
+            <span class="link_name">Dashboard</span>
           </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Profile</a></li>
-          <li><a href="/account-info.html">Account Info</a></li>
-          <li><a href="/referral.html">Referral</a></li>
-          <li><a href="/sub-admin.html">Sub Admin</a></li>
-          <li><a href="/role-permission.html">Role Permission</a></li>
-        </ul>
-      </li>
-      <li class="submenu_item">
-        <div class="iocn-link">
-          <a href="#">
-            <img src="/images/admin-icon/finance.svg" alt="">
-            <span class="link_name">Finance</span>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="/index.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/user-list.html">
+            <img src="/images/admin-icon/user-list.svg" alt="">
+            <span class="link_name">User List</span>
           </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Finance</a></li>
-          <li><a href="/cash-pick-up.html">Cash Pick Up</a></li>
-          <li><a href="/cash-drop.html">Cash Drop</a></li>
-          <li><a href="/deposit-withdrawal-request.html">D/W Request</a></li>
-          <li><a href="/pick-drop-request.html">Pick Drop Request</a></li>
-          <li><a href="/money-transfer-request.html">Money Transfer Request</a></li>
-        </ul>
-      </li>
-      <li class="submenu_item">
-        <div class="iocn-link">
-          <a href="#">
-            <img src="/images/admin-icon/report.svg" alt="">
-            <span class="link_name">Report</span>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="/user-list.html">User List</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/add-user.html">
+            <img src="/images/admin-icon/add-user.svg" alt="">
+            <span class="link_name">Add User</span>
           </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Report</a></li>
-          <li><a href="/betting-p-l.html">Betting P/L</a></li>
-          <li><a href="/p-l-sport-wise.html">P/L Sport Wise</a></li>
-          <li><a href="/p-l-user-wise.html">P/L User Wise</a></li>
-          <li><a href="/bet-history.html">Bet History</a></li>
-          <li><a href="/account-statement.html">Account Statement</a></li>
-          <li><a href="/login-history.html">Login History</a></li>
-        </ul>
-      </li>
-      <li class="submenu_item">
-        <div class="iocn-link">
-          <a href="#">
-            <img src="/images/admin-icon/site-setting.svg" alt="">
-            <span class="link_name">Site Settings</span>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="/add-user.html">Add User</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/favorite.html">
+            <img src="/images/admin-icon/favorite.svg" alt="">
+            <span class="link_name">Favorite</span>
           </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Site Settings</a></li>
-          <li><a href="/site-setting.html">Site Setting</a></li>
-          <li><a href="/support-number.html">Support Number</a></li>
-          <li><a href="/user-category.html">User Category</a></li>
-          <li><a href="/banner-manage.html">Banner Manage</a></li>
-          <li><a href="/result-fancy.html">Result Fancy</a></li>
-          <li><a href="/result-market.html">Result Market</a></li>
-          <li><a href="/rollback-result.html">Rollback Result</a></li>
-        </ul>
-      </li>
-      <li class="submenu_item">
-        <div class="iocn-link">
-          <a href="#">
-            <img src="/images/admin-icon/manage.svg" alt="">
-            <span class="link_name">Manage</span>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="/favorite.html">Favorite</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/market-watch.html">
+            <img src="/images/admin-icon/market-watch.svg" alt="">
+            <span class="link_name">Market Watch</span>
           </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Manage</a></li>
-          <li><a href="/notification-manage.html">Notification Manage</a></li>
-          <li><a href="/bonus-setting.html">Bonus Setting</a></li>
-          <li><a href="/sport-setting.html">Sport Setting</a></li>
-          <li><a href="/series-setting.html">Series Setting</a></li>
-          <li><a href="/matches-setting.html">Matches Setting</a></li>
-          <li><a href="/market-setting.html">Market Setting</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <!-- <img src="/images/profile.jpg" alt="profileImg"> -->
-            <i class='bx bx-log-out special-i'></i>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="/market-watch.html">Market Watch</a></li>
+          </ul>
+        </li>
+        <li class="submenu_item">
+          <div class="iocn-link">
+            <a href="#">
+              <img src="/images/admin-icon/account-info.svg" alt="">
+              <span class="link_name">Profile</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
           </div>
-          <div class="name-job">
-            <div class="profile_name">Log Out</div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Profile</a></li>
+            <li><a href="/account-info.html">Account Info</a></li>
+            <li><a href="/referral.html">Referral</a></li>
+            <li><a href="/sub-admin.html">Sub Admin</a></li>
+            <li><a href="/role-permission.html">Role Permission</a></li>
+          </ul>
+        </li>
+        <li class="submenu_item">
+          <div class="iocn-link">
+            <a href="#">
+              <img src="/images/admin-icon/finance.svg" alt="">
+              <span class="link_name">Finance</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
           </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Finance</a></li>
+            <li><a href="/cash-pick-up.html">Cash Pick Up</a></li>
+            <li><a href="/cash-drop.html">Cash Drop</a></li>
+            <li><a href="/deposit-withdrawal-request.html">D/W Request</a></li>
+            <li><a href="/pick-drop-request.html">Pick Drop Request</a></li>
+            <li><a href="/money-transfer-request.html">Money Transfer Request</a></li>
+          </ul>
+        </li>
+        <li class="submenu_item">
+          <div class="iocn-link">
+            <a href="#">
+              <img src="/images/admin-icon/report.svg" alt="">
+              <span class="link_name">Report</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Report</a></li>
+            <li><a href="/betting-p-l.html">Betting P/L</a></li>
+            <li><a href="/p-l-sport-wise.html">P/L Sport Wise</a></li>
+            <li><a href="/p-l-user-wise.html">P/L User Wise</a></li>
+            <li><a href="/bet-history.html">Bet History</a></li>
+            <li><a href="/account-statement.html">Account Statement</a></li>
+            <li><a href="/login-history.html">Login History</a></li>
+          </ul>
+        </li>
+        <li class="submenu_item">
+          <div class="iocn-link">
+            <a href="#">
+              <img src="/images/admin-icon/site-setting.svg" alt="">
+              <span class="link_name">Site Settings</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Site Settings</a></li>
+            <li><a href="/site-setting.html">Site Setting</a></li>
+            <li><a href="/support-number.html">Support Number</a></li>
+            <li><a href="/user-category.html">User Category</a></li>
+            <li><a href="/banner-manage.html">Banner Manage</a></li>
+            <li><a href="/result-fancy.html">Result Fancy</a></li>
+            <li><a href="/result-market.html">Result Market</a></li>
+            <li><a href="/rollback-result.html">Rollback Result</a></li>
+          </ul>
+        </li>
+        <li class="submenu_item">
+          <div class="iocn-link">
+            <a href="#">
+              <img src="/images/admin-icon/manage.svg" alt="">
+              <span class="link_name">Manage</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Manage</a></li>
+            <li><a href="/notification-manage.html">Notification Manage</a></li>
+            <li><a href="/bonus-setting.html">Bonus Setting</a></li>
+            <li><a href="/sport-setting.html">Sport Setting</a></li>
+            <li><a href="/series-setting.html">Series Setting</a></li>
+            <li><a href="/matches-setting.html">Matches Setting</a></li>
+            <li><a href="/market-setting.html">Market Setting</a></li>
+          </ul>
+        </li>
+  
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!-- <img src="/images/profile.jpg" alt="profileImg"> -->
+              <i class='bx bx-log-out special-i'></i>
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Log Out</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard">
+      <div class="top-head-bar">
+        <h2 class="page-heading">Series List</h2>
+        <button onclick="showpop()">Add Series</button>
+      </div>
+
+        <div class="user-search2">
+          <div class="input-box">
+            <label for="">Search By Series Name</label>
+            <input type="text" placeholder="Enter Series Name" />
         </div>
-      </li>
-    </ul>
+          <div class="input-box">
+            <label for="">Status</label>
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">Active</option>
+                <option value="">In-Active</option>
+            </select>
+        </div>
+        <div class="input-box">
+          <label for="">Sport</label>
+          <select name="" id="">
+              <option value="">All</option>
+          </select>
+      </div>
+          <button class="load-btn">Load</button>
+        </div>
+    
+        <div class="table">
+          <table id="customers">
+            <tr>
+              <th>Series Name</th>
+              <th>Sport Name</th>
+              <th>Matches</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>National T20 Cup (11454392)</td>
+              <td>Cricket (4)</td>
+              <td><a href="/matches-setting.html"><span>View</span></a></td>
+              <td><span class="green-back">Active</span></td>
+              <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+    <!-- Popup -->
+  <div class="c-p-popup" id="c-p-popup">
+    <h2>Sport Setting</h2>
+    <div class="c-p-popup-box">
+      <div class="c-p-popup-inner-box">
+        <div class="c-p-popup-content">
+          <label for="">Min Odds*</label>
+          <input type="text" placeholder="1">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Max Odds*</label>
+          <input type="text" placeholder="4">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Min Odds*</label>
+          <input type="text" placeholder="0">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Max Odds*</label>
+          <input type="text" placeholder="0">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Match Bet Delay*</label>
+          <input type="text" placeholder="7">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Match Min Stack*</label>
+          <input type="text" placeholder="100">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Match Max Stack*</label>
+          <input type="text" placeholder="10000">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Match Max Profit*</label>
+          <input type="text" placeholder="25000">
+        </div>
+      </div>
+      <div class="c-p-popup-inner-box">
+        <div class="c-p-popup-content">
+          <label for="">Session Bet Delay*</label>
+          <input type="text" placeholder="7">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Session Min Stack*</label>
+          <input type="text" placeholder="100">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Session Max Stack*</label>
+          <input type="text" placeholder="10000">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Session Max Profit*</label>
+          <input type="text" placeholder="500000">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Bet Delay*</label>
+          <input type="text" placeholder="7">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Min Stack*</label>
+          <input type="text" placeholder="100">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Max Stack*</label>
+          <input type="text" placeholder="10000">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Bookmaker Max Profit*</label>
+          <input type="text" placeholder="0">
+        </div>
+      </div>
+      <button class="cross-btn" onclick="closeCPpop()">X</button>
+    </div>
+    <button class="submit-btn">Submit</button>
   </div>
 
-  <!-- Dashboard -->
-  <div class="dashboard">
-    <h2 class="page-heading">Series Setting</h2>
+    <!-- Add Series Popup -->
+    <div class="d-w-popup" id="d-w-popup">
+      <h2>Add Series</h2>
+      <div class="d-w-popup-inner-box">
+        <div class="c-p-popup-content">
+          <label for="">Name*</label>
+          <input type="text" placeholder="Enter Amount">
+        </div>
+        <div class="c-p-popup-content">
+          <label for="">Series Id*</label>
+          <input type="text" placeholder="Enter Max Amount">
+        </div>
 
-  </div>
+        <button class="submit-btn">Submit</button>
+  
+        <button class="cross-btn" onclick="closepop()">X</button>
+      </div>
+    </div>
 
-  <!-- JavaScript -->
-  <script src="/script.js"></script>
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
 </body>
 
 </html>

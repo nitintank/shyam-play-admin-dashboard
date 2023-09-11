@@ -186,10 +186,164 @@
   </div>
 
   <!-- Dashboard -->
-  <div class="dashboard">
-    <h2 class="page-heading">Market Setting</h2>
+  <div class="dashboard" id="dashboard">
+    <div class="top-head-bar">
+      <h2 class="page-heading">Market List</h2>
+      <button onclick="showpop()">Add Market</button>
+    </div>
 
+    <div class="user-search2">
+      <div class="input-box">
+        <label for="">Search By Match Name</label>
+        <input type="text" placeholder="Enter Match Name" />
+      </div>
+      <div class="input-box">
+        <label for="">Market Type</label>
+        <select name="" id="">
+          <option value="">All</option>
+          <option value="">Fancy</option>
+          <option value="">Market</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Status</label>
+        <select name="" id="">
+          <option value="">All</option>
+          <option value="">Active</option>
+          <option value="">In-Active</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Sport</label>
+        <select name="" id="">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Series</label>
+        <select name="" id="">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="">Matches</label>
+        <select name="" id="">
+          <option value="">All</option>
+        </select>
+      </div>
+      <button class="load-btn">Load</button>
+    </div>
+
+    <div class="table">
+      <table id="customers">
+        <tr>
+          <th>Sport Name</th>
+          <th>Series Name</th>
+          <th>Match Name</th>
+          <th>Market Name</th>
+          <th>Action</th>
+          <th>Setting</th>
+        </tr>
+        <tr>
+          <td>Cricket (4)</td>
+          <td>One Day Internationals (11454392)</td>
+          <td>South Africa V Australia (11454392)</td>
+          <td>Match Odds (1.211299)</td>
+          <td><span class="green-back">Active</span></td>
+          <td onclick="showCPpop()"><i class='bx bxs-cog'></i></td>
+        </tr>
+        <tr>
+          <td>Cricket (4)</td>
+          <td>One Day Internationals (11454392)</td>
+          <td>South Africa V Australia (11454392)</td>
+          <td>Match Odds (1.211299)</td>
+          <td><span>Inactive</span></td>
+          <td onclick="showCPpop()"><i class='bx bxs-cog'></i></td>
+        </tr>
+      </table>
+    </div>
   </div>
+
+  <!-- Popup -->
+<div class="c-p-popup" id="c-p-popup">
+  <h2>Match Setting</h2>
+  <div class="c-p-popup-inner-box">
+    <div class="c-p-popup-content">
+      <label for="">Min Odds*</label>
+      <input type="text" placeholder="1">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Max Odds*</label>
+      <input type="text" placeholder="4">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Min Stack*</label>
+      <input type="text" placeholder="100">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Max Stack*</label>
+      <input type="text" placeholder="499998">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Max Profit*</label>
+      <input type="text" placeholder="10000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bet Delay*</label>
+      <input type="text" placeholder="2">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Odds Mode*</label>
+      <select name="" id="">
+        <option value="">Auto</option>
+        <option value="">Manual</option>
+      </select>
+    </div>
+    <button class="submit-btn">Submit</button>
+
+    <button class="cross-btn" onclick="closeCPpop()">X</button>
+  </div>
+</div>
+
+<!-- Add Market Popup -->
+<div class="d-w-popup" id="d-w-popup">
+  <h2>Add Market</h2>
+  <div class="d-w-popup-inner-box">
+    <div class="c-p-popup-content">
+      <label for="">Name*</label>
+      <input type="text" placeholder="Enter Name">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Market Id*</label>
+      <input type="text" placeholder="Enter Market Id">
+    </div>
+    <div class="pop-in-box">
+    <div class="c-p-popup-content2">
+      <label for="">Runner Name*</label>
+      <input type="text">
+    </div>
+    <div class="c-p-popup-content2">
+      <label for="">Selection Id*</label>
+      <input type="text">
+    </div>
+    <button class="add-btn">Add</button>
+  </div>
+  <div class="pop-in-box">
+    <div class="c-p-popup-content2">
+      <label for="">Runner Name*</label>
+      <input type="text">
+    </div>
+    <div class="c-p-popup-content2">
+      <label for="">Selection Id*</label>
+      <input type="text">
+    </div>
+    <button class="delete-btn">Delete</button>
+  </div>
+    <button class="submit-btn">Submit</button>
+
+    <button class="cross-btn" onclick="closepop()">X</button>
+  </div>
+</div>
 
   <!-- JavaScript -->
   <script src="/script.js"></script>
