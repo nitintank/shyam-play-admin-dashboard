@@ -186,9 +186,253 @@
   </div>
 
   <!-- Dashboard -->
-  <div class="dashboard">
+  <div class="dashboard" id="dashboard">
     <h2 class="page-heading">Bonus Setting</h2>
 
+    <div class="cards">
+      <div class="card-blocks">
+        <h2>REGISTER</h2>
+        <p>100</p>
+        <p>Amount</p>
+        <p>Dec 31, 2022</p>
+        <p>Jan 30, 2022</p>
+        <button onclick="showCPpop()"><i class='bx bxs-edit'></i>EDIT</button>
+      </div>
+      <div class="card-blocks">
+        <h2>DEPOSIT</h2>
+        <p>2</p>
+        <p>%</p>
+        <p>Mar 31, 2022</p>
+        <p>Apr 14, 2023</p>
+        <button onclick="showUSpop()"><i class='bx bxs-edit'></i>EDIT</button>
+      </div>
+      <div class="card-blocks">
+        <h2>EVERY-DAY</h2>
+        <p>100</p>
+        <p>%</p>
+        <p>Mar 6, 2022</p>
+        <p>Mar 6, 2023</p>
+        <button onclick="showpop()"><i class='bx bxs-edit'></i>EDIT</button>
+      </div>
+      <div class="card-blocks">
+        <h2>RESULT</h2>
+        <p>100</p>
+        <p>%</p>
+        <p>Mar 7, 2022</p>
+        <p>Jun 29, 2023</p>
+        <button onclick="showCPpop()"><i class='bx bxs-edit'></i>EDIT</button>
+      </div>
+      <div class="card-blocks">
+        <h2>REFER</h2>
+        <p>50 <span>| Register: 100</span></p>
+        <p>Amount</p>
+        <p>Mar 1, 2023</p>
+        <p>Mar 30, 2022</p>
+        <button onclick="showCLpop()"><i class='bx bxs-edit'></i>EDIT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Popup -->
+  <div class="c-p-popup" id="c-p-popup">
+    <h2>Referral Settings</h2>
+    <div class="c-p-popup-inner-box">
+      <div class="c-p-popup-content">
+        <label for="">Amount*</label>
+        <input type="text" placeholder="Enter Amount">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Amount Type*</label>
+        <select name="" id="">
+          <option value="">Amount</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Status*</label>
+        <select name="" id="">
+          <option value="">Inactive</option>
+          <option value="">Active</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Start Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">End Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <button class="submit-btn">Submit</button>
+
+      <button class="cross-btn" onclick="closeCPpop()">X</button>
+    </div>
+  </div>
+
+  <!-- Deposit Popup -->
+  <div class="u-s-popup" id="u-s-popup">
+    <h2>Referral Settings</h2>
+    <div class="c-p-popup-inner-box">
+      <div class="c-p-popup-content">
+        <label for="">Amount Type*</label>
+        <select name="" id="">
+          <option value="">Percentage(*)</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Status*</label>
+        <select name="" id="">
+          <option value="">Active</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Start Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">End Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <div class="c-p-popup-content2">
+        <label for="">Deposit Count*</label>
+        <div class="popup-box-icons">
+          <input type="text" placeholder="0" />
+          <p>+</p>
+        </div>
+      </div>
+      <div class="c-p-popup-content3">
+        <div class="pop-input-box">
+        <label for="">Min</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Max</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Amount</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Time</label>
+        <input type="text" placeholder="0" />
+      </div>
+        <div class="popup-box-icons">
+          <p>+</p>
+        </div>
+      </div>
+      <div class="c-p-popup-content2">
+        <label for="">Deposit Count*</label>
+        <div class="popup-box-icons2">
+          <input type="text" placeholder="-1" />
+          <p><i class='bx bxs-message-square-x'></i></p>
+        </div>
+      </div>
+      <div class="c-p-popup-content3">
+        <div class="pop-input-box">
+        <label for="">Min</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Max</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Amount</label>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="pop-input-box">
+        <label for="">Time</label>
+        <input type="text" placeholder="0" />
+      </div>
+        <div class="popup-box-icons">
+          <p>+</p>
+        </div>
+      </div>
+      <button class="submit-btn">Submit</button>
+      <button class="cross-btn" onclick="closeUSpop()">X</button>
+    </div>
+  </div>
+
+  <!-- Everyday Popup -->
+  <div class="d-w-popup" id="d-w-popup">
+    <h2>Referral Settings</h2>
+    <div class="c-p-popup-inner-box">
+      <div class="c-p-popup-content">
+        <label for="">Amount*</label>
+        <input type="text" placeholder="Enter Amount">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Max Amount*</label>
+        <input type="text" placeholder="Enter Max Amount">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Amount Type*</label>
+        <select name="" id="">
+          <option value="">Percentage(%)</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Status*</label>
+        <select name="" id="">
+          <option value="">Inactive</option>
+          <option value="">Active</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Start Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">End Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <button class="submit-btn">Submit</button>
+
+      <button class="cross-btn" onclick="closepop()">X</button>
+    </div>
+  </div>
+
+  <!-- Refer Popup -->
+  <div class="c-l-popup" id="c-l-popup">
+    <h2>Referral Settings</h2>
+    <div class="c-p-popup-inner-box">
+      <div class="c-p-popup-content">
+        <label for="">Amount*</label>
+        <input type="text" placeholder="Enter Amount">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Joining Amount*</label>
+        <input type="text" placeholder="Enter Joining Amount">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Referral Commission*</label>
+        <input type="text" placeholder="Enter Referral Commission">
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Amount Type*</label>
+        <select name="" id="">
+          <option value="">Percentage(%)</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Status*</label>
+        <select name="" id="">
+          <option value="">Inactive</option>
+          <option value="">Active</option>
+        </select>
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">Start Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <div class="c-p-popup-content">
+        <label for="">End Date*</label>
+        <input type="text" name="daterange" value="01/01/2023" />
+      </div>
+      <button class="submit-btn">Submit</button>
+
+      <button class="cross-btn" onclick="closeCLpop()">X</button>
+    </div>
   </div>
 
   <!-- JavaScript -->
