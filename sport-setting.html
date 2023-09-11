@@ -186,10 +186,182 @@
   </div>
 
   <!-- Dashboard -->
-  <div class="dashboard">
-    <h2 class="page-heading">Sport Setting</h2>
+  <div class="dashboard" id="dashboard">
+    <h2 class="page-heading">Sports List</h2>
 
+    <div class="table">
+      <table id="customers">
+        <tr>
+          <th>Sport Name</th>
+          <th>Status</th>
+          <th>Series</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Soccer (1)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Tennis (2)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Cricket (4)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Horse Racing (7)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Grey Hound Racing (4339)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Casino (-2)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Super Nowa (-3)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+        <tr>
+          <td>Slot Games (-7)</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+          </label>
+          </td>
+          <td><button class="keys">View</button></td>
+          <td><i class='bx bxs-cog' onclick="showCPpop()"></i></td>
+        </tr>
+      </table>
+    </div>
   </div>
+
+<!-- Register Popup -->
+<div class="c-p-popup" id="c-p-popup">
+  <h2>Sport Setting</h2>
+  <div class="c-p-popup-inner-box">
+    <div class="c-p-popup-content">
+      <label for="">Min Odds*</label>
+      <input type="text" placeholder="1">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Max Odds*</label>
+      <input type="text" placeholder="4">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Min Odds*</label>
+      <input type="text" placeholder="0">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Max Odds*</label>
+      <input type="text" placeholder="0">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Match Bet Delay*</label>
+      <input type="text" placeholder="7">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Match Min Stack*</label>
+      <input type="text" placeholder="100">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Match Max Stack*</label>
+      <input type="text" placeholder="10000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Match Max Profit*</label>
+      <input type="text" placeholder="25000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Session Bet Delay*</label>
+      <input type="text" placeholder="7">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Session Min Stack*</label>
+      <input type="text" placeholder="100">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Session Max Stack*</label>
+      <input type="text" placeholder="10000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Session Max Profit*</label>
+      <input type="text" placeholder="500000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Bet Delay*</label>
+      <input type="text" placeholder="7">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Min Stack*</label>
+      <input type="text" placeholder="100">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Max Stack*</label>
+      <input type="text" placeholder="10000">
+    </div>
+    <div class="c-p-popup-content">
+      <label for="">Bookmaker Max Profit*</label>
+      <input type="text" placeholder="0">
+    </div>
+    <button class="submit-btn">Submit</button>
+
+    <button class="cross-btn" onclick="closeCPpop()">X</button>
+  </div>
+</div>
 
   <!-- JavaScript -->
   <script src="/script.js"></script>
